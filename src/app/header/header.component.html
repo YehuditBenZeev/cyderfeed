@@ -1,0 +1,16 @@
+<table id="header">
+    <th><icon></icon></th>
+    <th>
+      <h1>Share your thoughts.</h1>
+        <p>Text: <input [feedText]='feedText' (keyup)='onKeyUp($event)'/></p>
+        <button 
+            class='btn btn-primary' 
+            id = 'post' 
+            (click)='addItem($event)'>Post</button>
+        <button 
+            class='btn btn-primary' 
+            id = 'cancle'
+            (click)='canclePost()'>Cancle</button>
+    </th>
+</table>
+<br>

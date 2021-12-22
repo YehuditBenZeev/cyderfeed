@@ -1,0 +1,6 @@
+<ul id = "feeds">
+    <div  *ngFor = "let feed of feeds">
+        <feed [feedContent] = feed.feed_content [likes] = feed.likes [love] = feed.love [time] = feed.time></feed>
+        <br>
+    </div>    
+</ul>
